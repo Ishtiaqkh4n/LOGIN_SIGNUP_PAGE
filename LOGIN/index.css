@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main_Container{
+    width:100vw;
+    height:100vh;
+    background-color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.Center_div{
+    width: 24%;
+    height:60%;
+    background-color: #393E46;
+    
+}
+
+.text{
+   color:#EEEEEE ;
+   text-align: center;
+   margin-top: 28px;
+    /* border: 2px solid rgb(76, 255, 6); */
+}
+.Input_area {
+   margin-top:30px;
+   /* border: 2px solid blue; */
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   
+
+   
+
+   
+}
+.Input_area input{
+    margin-top: 20px;
+    padding:12px;
+    width:90%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    
+
+}
+
+.button{
+    margin-top: 40px;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.button button{
+    font-weight: bold;
+    background-color: #00ADB5;
+    border: none;
+    outline:none ;
+    padding:10px;
+    width:90%;
+  /* width: 5%; Or any specific width */
+
+}
+
+.button button:hover{
+      background-color: #00acb57c;
+}
+
+
+/*
+// const { useOptimistic } = require("react")
+
+// //login page
+// input id   check if the id is new or old 
+// password   check if the password is new or old if old/mean someid has this so fuck it useOptimistic
+// login now   login will take it to next page weather it will display to something else 
+
+// already have account   if account is already then 
+
+// 222831 background color
+//#393E46  page background
+// 00ADB5 buttons
+// EEEEEE textss
+*/
+
+
+
+
+
+

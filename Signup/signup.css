@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Raleway", sans-serif;
+     color:#FFFFFF;
+}
+
+#Main_Container{
+    width:100vw;
+    height:100vh;
+    /* background-color: #3E1E68; */
+}
+
+#Center_item{
+    background-color:#5D2F77 ;
+    width:100%;
+    height:100%;
+}
+
+
+#Center_item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+#Center_item div{
+  display: flex;
+  flex-direction: column;
+  /* border: 4px solid green; */
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  
+  
+}
+#Center_item h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+  
+}
+
+#Center_item input{
+    padding:10px;
+    width:80%;
+    border-radius: 9px;
+    margin-left: 15px;
+    /* background-color: ; */
+    /* outline: none; */
+    color:black;
+}
+/* input::placeholder{
+    color:#1a1a1a;
+    font-size: 5px;
+} */
+#Center_item label{
+    position: relative;
+    margin: 3px;
+}
+
+#Center_item button{
+    width:80%;
+    padding:12px;
+    border-radius: 7px;
+    background-color:#E45A92;
+    border:none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+#Center_item a{
+    color:#FFACAC;
+}
+
+/* #Center_item button:hover{
+ background-color:#e45a917c;
+} */
+
+
+
+
+
+
+
+
+@media (min-width: 641px) { 
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+    .Aura:hover{
+        background-color: #ffacac00;
+    }
+    #Center_item h2{
+        margin-top: 13px;
+    }
+    #Center_item{
+    width: 40%;
+    height:100%;
+    
+    }
+    #Main_Container{
+     width:100vw;
+     height:100vh;
+     background-color: #3E1E68;
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+    }
+
+  #Center_item div{
+    display: flex;
+    flex-direction: column;
+    /* border:3px solid green; */
+    justify-content: space-around;
+    
+  }
+
+
+  #Center_item input{
+    /* border:3px solid green; */
+    width:90%;
+    outline: none;
+  }
+  /* #Center_item label{
+    /* margin: 0px;/ */
+  }
+
+/* .Head_ach{
+    /* border:4px solid yellow; */
+/* }  */
+
+/* .Aura{
+    margin-top: ;
+        border:4px solid yellow;
+
+} */
+
+
