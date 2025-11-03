@@ -42,3 +42,31 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 })
+
+//  ./will.js lOOK FOR THE SAME FOLDER CURRENTLY YOU ARE IN
+// .DOT MEAN THIS FOLDER 
+//   BACKSLASH MEANS
+
+ /* If we have 2 files in one folder then use ../ to go into 
+
+
+  .. = go up one folder (from CHILD2 to FATHER)
+CHILD1/ = go into CHILD1
+
+will.js = grab the file
+
+import '../CHILD1/will.js';
+Think like walking:
+
+.. step out of CHILD2
+
+go into CHILD1
+
+open will.js
+
+STEP 1  WRITE TYPE MODULE TO SHOW IT IN BROWSER
+STEP2  USE EXPORT >PERFORM WHAT TO DO
+STEP3  THEN IMPORT IT 
+
+
+*/
