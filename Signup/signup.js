@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
+
     const  Fname=document.getElementById("Fname");
     const  Lname=document.getElementById("Lname");
     const  Dob=document.getElementById("Dob")    ;
@@ -7,66 +8,61 @@ document.addEventListener("DOMContentLoaded",()=>{
     const  Pword=document.getElementById("Ps");
     const Submit_btn=document.getElementById("Button_submit");
 
-   
+  
+     let Database= JSON.parse(localStorage.getItem("Save"))  || [];
 
-   Submit_btn.addEventListener("click",(e)=>{
-    console.log(e);
-    e.preventDefault();
+      
+      
+      
+      
+    Submit_btn.addEventListener("click",(e)=>{
+    let FirstName=Fname.value.trim();
+    let LastName=Lname.value.trim();
+    let Dateofbirth=Dob.value.trim();
+    let Ema=Email.value.trim();
+    let Password=Pword.value.trim();
 
-    let Firstname=Fname.value.trim();
-    let Lastname=Lname.value.trim();
-    let Emailname=Email.value.trim();
-    let Psdname=Pword.value.trim();
-    let Dobname=Dob.value;
-
-    if(!Dobname || Firstname=="" || Lastname=="" || Emailname=="" || Psdname=="" 
-    ) {alert("FUCKEDUP!")}
-
-
-    let user={
-        id:Date.now(),
-        FirstName:Firstname,
-        LastName:Lastname,
-        Email:Emailname,
-        Pas:Psdname,
-        Dob:Dobname
-
+    if(FirstName=="" || LastName=="" || !Dateofbirth || Ema=="" || Password=="") {
+        alert("ENTER SOMETHING ELSE")
+        return;
     };
 
+    let User={
+        Fn:FirstName,
+        Ln:LastName,
+        Db:Dateofbirth,
+        Email:Ema,
+        Ps:Password,
+    }
+     
+    Database.push(User);
 
-    console.log(user)
-   })
+    Fname.value="";
+    Lname.value="";
+    Dob.value="";
+    Email.value="";
+    Pword.value="";
+    // FirstName.value="";
 
 
 
+    
+
+          Local();
 
 
+
+    });
+
+
+
+    function Local(){
+        localStorage.setItem("save",JSON.stringify(Database))
+    }
+
+
+
+      
+   
+    
 })
-
-//  ./will.js lOOK FOR THE SAME FOLDER CURRENTLY YOU ARE IN
-// .DOT MEAN THIS FOLDER 
-//   BACKSLASH MEANS
-
- /* If we have 2 files in one folder then use ../ to go into 
-
-
-  .. = go up one folder (from CHILD2 to FATHER)
-CHILD1/ = go into CHILD1
-
-will.js = grab the file
-
-import '../CHILD1/will.js';
-Think like walking:
-
-.. step out of CHILD2
-
-go into CHILD1
-
-open will.js
-
-STEP 1  WRITE TYPE MODULE TO SHOW IT IN BROWSER
-STEP2  USE EXPORT >PERFORM WHAT TO DO
-STEP3  THEN IMPORT IT 
-
-
-*/
